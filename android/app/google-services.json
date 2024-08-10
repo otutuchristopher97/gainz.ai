@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1095657355618",
+    "project_id": "gainz-ai-app",
+    "storage_bucket": "gainz-ai-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095657355618:android:d8a1053d70f93cf243143b",
+        "android_client_info": {
+          "package_name": "com.example.gainz_ai_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdQk_kzuWlDj0yo5hEwG3F-ly5rhvaBCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
