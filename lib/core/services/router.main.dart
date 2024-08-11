@@ -2,6 +2,11 @@ part of 'router.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
+    case SplashScreen.routeName:
+      return _pageBuilder(
+        (_) => const SplashScreen(),
+        settings: settings,
+      );
     case '/':
       final prefs = sl<SharedPreferences>();
       return _pageBuilder(

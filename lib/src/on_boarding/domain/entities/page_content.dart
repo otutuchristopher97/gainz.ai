@@ -11,28 +11,25 @@ class PageContent extends Equatable {
   const PageContent.first()
       : this(
           image: MediaRes.casualReading,
-          title: 'Brand new curriculum',
+          title: 'Welcome to Gainz AI',
           description:
-              'This is the first online education platform designed by the '
-              "world's top professors",
+              'Your AI-Powered Workout Partner, for all your health needs',
         );
 
   const PageContent.second()
       : this(
           image: MediaRes.casualLife,
-          title: 'Brand a fun atmosphere',
+          title: 'Real-Time Pose Detection',
           description:
-              'This is the first online education platform designed by the '
-              "world's top professors",
+              'Track your movements with precision and accuracy using advanced AI technology',
         );
 
   const PageContent.third()
       : this(
           image: MediaRes.casualMeditationScience,
-          title: 'Easy to join the lesson',
+          title: 'Count Every Rep',
           description:
-              'This is the first online education platform designed by the '
-              "world's top professors",
+              'Accurately track your jumping jacks and monitor your progress in real-time',
         );
 
   final String image;

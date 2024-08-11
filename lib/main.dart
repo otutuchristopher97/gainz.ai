@@ -10,6 +10,7 @@ import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gainz_ai_app/src/home/presentation/cubit/dailyworkout_cubit.dart';
+import 'package:gainz_ai_app/src/on_boarding/presentation/views/splashScreen.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         onGenerateRoute: generateRoute,
+        initialRoute: SplashScreen.routeName,
       ),
     );
   }
