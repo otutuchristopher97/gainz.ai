@@ -12,13 +12,13 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   late Timer timer;
 
   @override
   void initState() {
     super.initState();
     timer = Timer(const Duration(seconds: 3), () {
+      FocusManager.instance.primaryFocus?.unfocus();
       Navigator.pushReplacementNamed(context, '/');
     });
   }

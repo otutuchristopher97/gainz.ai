@@ -36,7 +36,7 @@ class _HomeIndicatorState extends State<HomeIndicator> {
         child: Column(
           children: [
             const SizedBox(
-              height: 50,
+              height: 30,
             ),
             CircularPercentIndicator(
               radius: 120.0,

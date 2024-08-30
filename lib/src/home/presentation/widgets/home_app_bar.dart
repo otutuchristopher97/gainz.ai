@@ -11,6 +11,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text('Hello, ${context.watch<UserProvider>().user!.fullName}'),
       centerTitle: false,
+      leading: null,
       actions: [
         Consumer<UserProvider>(
           builder: (_, provider, __) {

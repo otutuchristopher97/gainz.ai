@@ -145,6 +145,7 @@ class _HomeRepsInfoScreenState extends State<HomeRepsInfoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10),
@@ -153,7 +154,7 @@ class _HomeRepsInfoScreenState extends State<HomeRepsInfoScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.25,
+                height: MediaQuery.of(context).size.height * 0.08,
               ),
               CustomText(
                 text: 'Unlock Your Full Potential',

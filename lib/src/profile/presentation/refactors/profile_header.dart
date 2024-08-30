@@ -9,6 +9,7 @@ import 'package:gainz_ai_app/core/res/media_res.dart';
 import 'package:flutter/material.dart';
 import 'package:gainz_ai_app/core/services/injection_container.dart';
 import 'package:gainz_ai_app/src/auth/presentation/bloc/auth_bloc.dart';
+import 'package:gainz_ai_app/src/on_boarding/presentation/views/on_boarding_screen.dart';
 import 'package:gainz_ai_app/src/profile/presentation/views/edit_profile_view.dart';
 import 'package:provider/provider.dart';
 

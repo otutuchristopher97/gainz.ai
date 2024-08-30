@@ -9,13 +9,17 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       extendBodyBehindAppBar: true,
-      appBar: HomeAppBar(),
+      appBar: const HomeAppBar(),
       body: GradientBackground(
         image: MediaRes.homeGradientBackground,
-        child: HomeBody(),
+        child: GestureDetector(
+          onTap: (){
+            FocusManager.instance.primaryFocus?.unfocus();
+          },
+          child: const HomeBody()),
       ),
     );
   }

@@ -7,17 +7,17 @@ class MediaRes {
   static const _baseIcon = 'assets/icons';
 
   static const bluePotPlant = '$_baseVector/blue_pot_plant.png';
-  static const casualLife = '$_baseVector/casual_life.png';
+  static const casualLife = '$_baseImage/onboarding3.jpg';
   static const casualMeditation = '$_baseVector/casual_meditation.png';
-  static const casualMeditationScience =
-      '$_baseVector/casual_meditation_science.png';
-  static const casualReading = '$_baseVector/casual_reading.png';
+  static const casualMeditationScience = '$_baseImage/onboarding4.jpg';
+  static const casualReading = '$_baseImage/onboarding2.jpg';
   static const microscope = '$_baseVector/microscope.png';
   static const steamCup = '$_baseVector/steam_cup.png';
   static const turquoisePotPlant = '$_baseVector/turquoise_pot_plant.png';
 
   /// Backgrounds
   static const onBoardingBackground = '$_baseImage/onBoarding_background.png';
+  static const splashScreen = '$_baseImage/splashscreen.png';
   static const authGradientBackground =
       '$_baseImage/auth_gradient_background.png';
   static const homeGradientBackground =

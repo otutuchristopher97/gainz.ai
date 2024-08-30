@@ -3,12 +3,19 @@ import 'package:gainz_ai_app/src/home/domain/entities/dailyworkout.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class HomeContainer extends StatefulWidget {
-  HomeContainer({super.key, this.title, this.image, this.subtitle, this.color});
+  HomeContainer(
+      {super.key,
+      this.title,
+      this.image,
+      this.subtitle,
+      this.color,
+      this.percentage = 0});
 
   final String? title;
   final String? image;
   final String? subtitle;
   Color? color;
+  double percentage;
 
   @override
   State<HomeContainer> createState() => _HomeContainerState();
@@ -45,7 +52,7 @@ class _HomeContainerState extends State<HomeContainer> {
                     padding: EdgeInsets.zero,
                     width: 100.0,
                     lineHeight: 8.0,
-                    percent: 0.5,
+                    percent: widget.percentage,
                     progressColor: const Color(0xff319964),
                   ),
                   const SizedBox(

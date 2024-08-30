@@ -1,10 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:gainz_ai_app/core/extensions/context_extension.dart';
-import 'package:gainz_ai_app/core/res/colours.dart';
 import 'package:gainz_ai_app/core/res/fonts.dart';
 import 'package:gainz_ai_app/src/on_boarding/domain/entities/page_content.dart';
-import 'package:gainz_ai_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnBoardingBody extends StatelessWidget {
   const OnBoardingBody({required this.pageContent, super.key});
@@ -16,8 +13,9 @@ class OnBoardingBody extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset(pageContent.image, height: context.height * .4),
-        SizedBox(height: context.height * .03),
+        Image.asset(pageContent.image,
+            height: context.height * .46, width: context.width),
+        SizedBox(height: context.height * .01),
         Padding(
           padding: const EdgeInsets.all(20).copyWith(bottom: 0),
           child: Column(
@@ -27,7 +25,7 @@ class OnBoardingBody extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontFamily: Fonts.aeonik,
-                  fontSize: 40,
+                  fontSize: 27,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -35,29 +33,13 @@ class OnBoardingBody extends StatelessWidget {
               Text(
                 pageContent.description,
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 14),
-              ),
-              SizedBox(height: context.height * .05),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 50,
-                    vertical: 17,
-                  ),
-                  backgroundColor: Colours.primaryColour,
-                  foregroundColor: Colors.white,
-                ),
-                onPressed: () {
-                  context.read<OnBoardingCubit>().cacheFirstTimer();
-                },
-                child: const Text(
-                  'Get Started',
-                  style: TextStyle(
-                    fontFamily: Fonts.aeonik,
-                    fontWeight: FontWeight.bold,
-                  ),
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: Colors.grey,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
+              SizedBox(height: context.height * .01),
             ],
           ),
         ),

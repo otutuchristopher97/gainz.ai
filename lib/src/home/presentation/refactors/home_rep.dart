@@ -25,9 +25,9 @@ class _HomeRepScreenState extends State<HomeRepScreen> {
               HomeIndicator(
                 dailyWorkout: widget.dailyWorkout,
               ),
-              const SizedBox(height: 10),
+              // const SizedBox(height: 10),
               SizedBox(
-                height: 170,
+                height: 160,
                 child: GridView(
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -43,9 +43,11 @@ class _HomeRepScreenState extends State<HomeRepScreen> {
                     ),
                     HomeContainer(
                       title: 'Goal',
-                      subtitle: '${widget.dailyWorkout?.dailyGoal}',
+                      subtitle:
+                          '${(widget.dailyWorkout!.dailyGoal)}',
                       image: 'assets/icons/goal.png',
                       color: const Color(0xff8274ED).withOpacity(0.1),
+                      percentage: widget.dailyWorkout!.completedReps / widget.dailyWorkout!.dailyGoal
                     ),
                   ],
                 ),

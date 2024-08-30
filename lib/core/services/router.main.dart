@@ -8,10 +8,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         settings: settings,
       );
     case '/':
-      final prefs = sl<SharedPreferences>();
+      // final prefs = sl<SharedPreferences>();
       return _pageBuilder(
         (context) {
-          if (prefs.getBool(kFirstTimerKey) ?? true) {
+          if (sl<FirebaseAuth>().currentUser == null) {
             return BlocProvider(
               create: (_) => sl<OnBoardingCubit>(),
               child: const OnBoardingScreen(),
